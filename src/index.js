@@ -11,7 +11,7 @@ const bodyParser = () => {
 
 const app = new Koa();
 const router = new Router();
-app.use(cors());
+app.use(cors()); // CORS middleware, 프로젝트에 병합 시 제거
 
 // !
 const signupUser = async ctx => {
